@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="utf-8">
+		<!-- <title>three.js webgl - loaders - OBJ loader</title> -->
 		<title>help me robi</title>
-    <!-- huggingface.co/spaces/themanfrom/image-to-3d -->
-    <!-- threejs.org/examples/webgl_loader_obj.html -->
-    <!-- https://github.com/mrdoob/three.js/blob/master/examples/webgl_loader_obj.html -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="shortcut icon" href="https://threejs.org/files/favicon_white.ico" media="(prefers-color-scheme: dark)"/>
-		<link rel="shortcut icon" href="https://threejs.org/files/favicon.ico" media="(prefers-color-scheme: light)" />
-    <link type="text/css" rel="stylesheet" href="https://threejs.org/files/main.css">
+		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
+
 	<body>
 		<div id="info">
 		<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - OBJLoader test
@@ -20,7 +16,7 @@
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "https://threejs.org/build/three.module.js",
+					"three": "../build/three.module.js",
 					"three/addons/": "./jsm/"
 				}
 			}
@@ -98,7 +94,7 @@
 
 				const loader = new OBJLoader( manager );
 				//loader.load( 'models/obj/male02/male02.obj', function ( obj ) {
-        loader.load( 'https://themanfrom-image-to-3d.hf.space/file=/tmp/gradio/10ca0cfb72daf67148c8e258e99727ca55ea9c9c/tmpb3w4hucx.obj', function ( obj ) {
+				loader.load( 'models/obj/helpmerobi.obj', function ( obj ) {
 
 					object = obj;
 
